@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg4ob48m2odca"]
+
+[ext_resource type="Theme" uid="uid://dy7aig36prgba" path="res://addons/gosole/theme.tres" id="1_1uqhp"]
+[ext_resource type="Script" path="res://addons/gosole/console.gd" id="2_b056b"]
+
+[node name="Console" type="Panel"]
+process_mode = 3
+visible = false
+z_index = 4096
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme = ExtResource("1_1uqhp")
+script = ExtResource("2_b056b")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="Log" type="RichTextLabel" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="Input" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Ver" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = -81.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "1.0.0"
+horizontal_alignment = 2
+vertical_alignment = 2

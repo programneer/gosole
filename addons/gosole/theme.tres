@@ -1,0 +1,33 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dy7aig36prgba"]
+
+[ext_resource type="FontFile" uid="uid://bltnx8bqn6rkr" path="res://addons/gosole/Inconsolata-Bold.ttf" id="1_nvsvo"]
+[ext_resource type="FontFile" uid="uid://dg6nxb7da37m" path="res://addons/gosole/Inconsolata-Regular.ttf" id="2_hww16"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6r3x8"]
+bg_color = Color(0, 0, 0, 0.784314)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kk8oh"]
+bg_color = Color(0.196078, 0.784314, 0.392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1b6v"]
+bg_color = Color(0.223529, 0.917647, 0.458824, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dbt8"]
+bg_color = Color(0.164706, 0.627451, 0.313726, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0x40s"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 5
+border_color = Color(0, 0, 0, 1)
+
+[resource]
+Label/colors/font_color = Color(0.196078, 0.784314, 0.392157, 1)
+Label/fonts/font = ExtResource("2_hww16")
+Panel/styles/panel = SubResource("StyleBoxFlat_6r3x8")
+RichTextLabel/colors/default_color = Color(0.196078, 0.784314, 0.392157, 1)
+RichTextLabel/fonts/bold_font = ExtResource("1_nvsvo")
+RichTextLabel/fonts/normal_font = ExtResource("2_hww16")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_kk8oh")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_a1b6v")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_7dbt8")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_0x40s")
